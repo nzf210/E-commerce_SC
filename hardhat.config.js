@@ -1,4 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
+require('dotenv').config();
+
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -6,21 +8,12 @@ module.exports = {
   defaultNetwork: "wandev",
   networks: {
     wandev: {
-      url: `wss://apitest.wanchain.org:8443/ws/v3/${process.env.WAN_API_KEY}`,
-      chainId: 999,
-      accounts: [process.env.WANDEV_KEY]
-    },
-    wancash: {
-      url: `wss://api.wanchain.org:8443/ws/v3/${process.env.WAN_API_KEY}`,
-      accounts: [process.env.WANDEV_KEY]
-    },
-    wandev2: {
       url: `https://gwan-ssl.wandevs.org:46891`,
       chainId: 999,
       gasPrice: 20000000000,
       accounts: [process.env.WANDEV_KEY]
     },
-    wancash2: {
+    wancash: {
       url: `https://gwan-ssl.wandevs.org:56891`,
       chainId: 888,
       gasPrice: 20000000000,

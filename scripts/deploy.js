@@ -16,8 +16,8 @@ async function main() {
   await payPs.deployed();
 
   console.log(
-    `Lock with 1 ETH and unlock timestamp ${unlockTime} deployed to ${day.address}`,
-    `PS ${unlockTime} deployed to ${day.address}`
+    `Lock with 1 ETH and unlock timestamp deployed to ${day.address}`,
+    `PS deployed to ${day.address}`
   );
 }
 
