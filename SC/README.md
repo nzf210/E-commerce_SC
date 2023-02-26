@@ -12,4 +12,7 @@ npx hardhat node
 npx hardhat run scripts/deploy.js
 ```
 Wanchain Tesnet
-PaymentProcessor deployed to 0xc14e2160136512269df3C09E707404fAB989EbeB USDT DeployTo to 0xc14e2160136512269df3C09E707404fAB989EbeB
+PaymentProcessor deployed to 0xc14e2160136512269df3C09E707404fAB989EbeB USDT DeployTo 0xc14e2160136512269df3C09E707404fAB989EbeB
+
+BACKEND WITH NEXTJS
+Folder: Backend/e-commerce/
