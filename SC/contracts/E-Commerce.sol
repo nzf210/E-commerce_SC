@@ -18,8 +18,8 @@ event PaymentDone(
 );
 
 
-    constructor(address _adminAddress, address _daiAddress) {
-        admin = _adminAddress;
+    constructor(address _admin, address _daiAddress) {
+        admin = _admin;
         dai = IERC20(_daiAddress);
     }
     

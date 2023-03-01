@@ -8,16 +8,16 @@ const hre = require("hardhat");
 
 async function main() {
   const Day = await hre.ethers.getContractFactory("Dai");
-  const PayPs = await hre.ethers.getContractFactory("PaymentProcessor");
   const day = await Day.deploy();
   await day.deployed();
 
+  const PayPs = await hre.ethers.getContractFactory("PaymentProcessor");
   const payPs = await PayPs.deploy('0x55c06843AfE480260b93dE67f1040B8CEE133163', day.address);
   await payPs.deployed();
 
   console.log(
     `Lock with 1 ETH and unlock timestamp deployed to ${day.address}`,
-    `PS deployed to ${day.address}`
+    `PS deployed to ${payPs.address}`
   );
 }
 
